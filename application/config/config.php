@@ -25,6 +25,7 @@ date_default_timezone_set('America/Sao_Paulo');
 | a PHP script and you can easily do that on your own.
 |
 */
+$config['base_url'] = (ENVIRONMENT == 'production' ? 'https://https://alanneki.online/' : (ENVIRONMENT == 'homologation' ? : 'http://localhost/sistemapadre/'));
 $config['base_url'] = 'http://localhost/sistemapadre/';
 
 

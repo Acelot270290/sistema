@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost:3308',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => ENVIRONMENT == 'production' ? 'https://alanneki.online/' : 'localhost:3308',
+	'username' => ENVIRONMENT == 'production' ? 'u291618285_Acelot' : 'root',
+	'password' => ENVIRONMENT == 'production' ? 'u291618285_sistemapdre' : '',
 	'database' => 'ordem',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
